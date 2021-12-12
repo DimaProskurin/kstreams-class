@@ -67,7 +67,7 @@ public class TestTopology {
     }
 
     @Test
-    @Disabled
+//    @Disabled
     void testBettorAmounts() {
         placeBet(Bet.builder().bettor("John").match("A-B").outcome(Outcome.A).amount(100).build());
         placeBet(Bet.builder().bettor("Mary").match("C-D").outcome(Outcome.D).amount(50).build());
@@ -83,7 +83,7 @@ public class TestTopology {
     }
 
     @Test
-    @Disabled
+//    @Disabled
     void testTeamAmounts() {
         placeBet(Bet.builder().bettor("John").match("A-B").outcome(Outcome.A).amount(100).build());
         placeBet(Bet.builder().bettor("Mary").match("B-A").outcome(Outcome.H).amount(50).build());
@@ -100,7 +100,7 @@ public class TestTopology {
     }
 
     @Test
-    @Disabled
+//    @Disabled
     void testFraud() {
         long currentTimestamp = System.currentTimeMillis();
         Score score = new Score().goalHome();
